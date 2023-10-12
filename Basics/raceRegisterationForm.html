@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registeration</title>
+</head>
+
+<body>
+    <h2>Race Registeration !</h2>
+
+    <form action="/dummy">
+        <label for="first">First Name</label>
+        <input type="text" required id="first" name="firstname" placeholder="Enter your first name">
+
+        <label for="last">Last Name</label>
+        <input type="text" required id="last" name="lastname" placeholder="Enter your last name">
+
+        <br>
+
+        <p>Select a race: </p>
+
+        <div>
+            <input type="radio" name="race" id="race1" value="">
+            <label for="race1">Fun Run 5K</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="race2" value="">
+            <label for="race2">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="race3" value="">
+            <label for="race3">Full Marathon</label>
+        </div>
+
+        <label for="mail">Email</label>
+        <input type="email" required id="mail" name="email" placeholder="Enter your email">
+
+        <label for="password">Password</label>
+        <input type="password" required id="password" name="password" placeholder="Enter password">
+
+        <div>
+            <label for="agegroup">Select Age Group : </label>
+            <select name="agegrp" id="agegroup">
+                <option value="u12">Under 12</option>
+                <option value="u14">Under 14</option>
+                <option value="u16">Under 16</option>
+                <option value="u18" selected>Under 18</option>
+            </select>
+        </div>
+
+        <button>Register</button>
+
+        <!-- http://127.0.0.1:5500/dummy?firstname=Vatsalya&lastname=Mishra&race=&email=mishravatsalya74%40gmail.com&password=Vortex04&agegrp=u18 -->
+
+        <!-- request sent -->
+
+
+
+    </form>
+
+</body>
+
+</html>
